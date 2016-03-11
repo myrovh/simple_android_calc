@@ -52,67 +52,55 @@
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
             android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:id="@+id/buttonContainer">
 
             <Button
                 android:id="@+id/sumButton"
-                android:layout_width="wrap_content"
+                android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:text="@string/sumSymbol"
                 android:onClick="OperationButtonPressed" />
 
             <Button
                 android:id="@+id/subtractButton"
-                android:layout_width="wrap_content"
+                android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:text="@string/subtractSymbol"
                 android:onClick="OperationButtonPressed" />
 
             <Button
                 android:id="@+id/divideButton"
-                android:layout_width="wrap_content"
+                android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:text="@string/divideSymbol"
                 android:onClick="OperationButtonPressed" />
 
             <Button
                 android:id="@+id/multiplyButton"
-                android:layout_width="wrap_content"
+                android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:text="@string/multiplySymbol"
                 android:onClick="OperationButtonPressed" />
         </LinearLayout>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/resultTitle"
+            android:id="@+id/resultDescription" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="@string/resultTitle"
-                android:id="@+id/resultDescription"
-                android:layout_centerVertical="true"
-                android:layout_alignParentStart="true" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="@string/defaultResultText"
-                android:id="@+id/resultView"
-                android:layout_centerVertical="true"
-                android:layout_alignParentEnd="true"
-                android:textSize="75sp"
-                android:layout_toEndOf="@+id/resultDescription"
-                android:paddingStart="10dp" />
-        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/defaultResultText"
+            android:id="@+id/resultView"
+            android:textSize="75sp"
+            android:paddingStart="10dp" />
 
     </LinearLayout>
 </RelativeLayout>
