@@ -8,5 +8,5 @@
     <string name="divideSymbol">/</string>
     <string name="multiplySymbol">*</string>
     <string name="resultTitle">Result:</string>
-    <string name="defaultResultText">0000</string>
+    <string name="defaultResultText">0.0</string>
 </resources>

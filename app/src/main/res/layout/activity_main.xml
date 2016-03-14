@@ -14,7 +14,8 @@
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:id="@+id/AppContainer">
 
         <TextView
             android:id="@+id/FirstNumberDescription"
