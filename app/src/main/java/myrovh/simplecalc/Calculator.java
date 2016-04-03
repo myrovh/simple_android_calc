@@ -5,31 +5,31 @@ package myrovh.simplecalc;
 enum Operation {NONE, SUM, SUBTRACT, MULTIPLY, DIVIDE}
 
 public class Calculator {
-    float numberOne;
-    float numberTwo;
+    Double numberOne;
+    Double numberTwo;
     Operation currentOperation;
 
+    public Calculator() {
+        this.numberOne = 0.0;
+        this.numberTwo = 0.0;
+        this.currentOperation = Operation.NONE;
+    }
+
     // Default Getters and Setters START
-    public float getNumberOne() {
+    public Double getNumberOne() {
         return numberOne;
     }
 
-    public void setNumberOne(float numberOne) {
+    public void setNumberOne(Double numberOne) {
         this.numberOne = numberOne;
     }
 
-    public float getNumberTwo() {
+    public Double getNumberTwo() {
         return numberTwo;
     }
 
-    public void setNumberTwo(float numberTwo) {
+    public void setNumberTwo(Double numberTwo) {
         this.numberTwo = numberTwo;
-    }
-
-    public Calculator() {
-        this.numberOne = 0;
-        this.numberTwo = 0;
-        this.currentOperation = Operation.NONE;
     }
 
     public void setCurrentOperation(char buttonText) {
@@ -47,7 +47,7 @@ public class Calculator {
     }
     // Default Getters and Setters END
 
-    public float calculate() {
+    public Double calculate() {
         if(currentOperation == Operation.SUM) {
             return sumNumbers();
         }
@@ -61,23 +61,23 @@ public class Calculator {
             return multiplyNumbers();
         }
         else {
-            return 0;
+            return 0.0;
         }
     }
 
-    public float sumNumbers() {
+    public Double sumNumbers() {
         return numberOne + numberTwo;
     }
 
-    public float subtractNumbers() {
+    public Double subtractNumbers() {
         return  numberOne - numberTwo;
     }
 
-    public float divideNumbers() {
+    public Double divideNumbers() {
         return numberOne / numberTwo;
     }
 
-    public  float multiplyNumbers() {
+    public Double multiplyNumbers() {
         return numberOne * numberTwo;
     }
 }

@@ -10,12 +10,12 @@
     tools:context="myrovh.simplecalc.MainActivity">
 
     <LinearLayout
+        android:id="@+id/AppContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:orientation="vertical"
-        android:id="@+id/AppContainer">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/FirstNumberDescription"
@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="numberDecimal" />
 
         <TextView
             android:id="@+id/secondNumberDescription"
@@ -43,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="numberDecimal" />
 
         <TextView
             android:id="@+id/buttonDescription"
@@ -53,55 +53,53 @@
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <LinearLayout
-            android:orientation="horizontal"
+            android:id="@+id/buttonContainer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/buttonContainer">
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/sumButton"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
-                android:text="@string/sumSymbol"
-                android:onClick="OperationButtonPressed" />
+                android:onClick="OperationButtonPressed"
+                android:text="@string/sumSymbol" />
 
             <Button
                 android:id="@+id/subtractButton"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
-                android:text="@string/subtractSymbol"
-                android:onClick="OperationButtonPressed" />
+                android:onClick="OperationButtonPressed"
+                android:text="@string/subtractSymbol" />
 
             <Button
                 android:id="@+id/divideButton"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
-                android:text="@string/divideSymbol"
-                android:onClick="OperationButtonPressed" />
+                android:onClick="OperationButtonPressed"
+                android:text="@string/divideSymbol" />
 
             <Button
                 android:id="@+id/multiplyButton"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
-                android:text="@string/multiplySymbol"
-                android:onClick="OperationButtonPressed" />
+                android:onClick="OperationButtonPressed"
+                android:text="@string/multiplySymbol" />
         </LinearLayout>
 
         <TextView
+            android:id="@+id/resultDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/resultTitle"
-            android:id="@+id/resultDescription" />
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/defaultResultText"
             android:id="@+id/resultView"
-            android:textSize="75sp"
-            android:paddingStart="10dp" />
-
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/defaultResultText"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="75sp" />
     </LinearLayout>
 </RelativeLayout>

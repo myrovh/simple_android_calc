@@ -9,4 +9,5 @@
     <string name="multiplySymbol">*</string>
     <string name="resultTitle">Result:</string>
     <string name="defaultResultText">0.0</string>
+    <string name="decimalFormatPattern">###.##</string>
 </resources>
